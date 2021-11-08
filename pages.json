@@ -1,0 +1,548 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		
+		
+		// 测试
+		/* {
+			"path": "pages/index/test",
+			"style": {
+				"navigationBarTitleText": "",
+				"navigationBarBackgroundColor": "#fff"
+			}
+		}, */
+		// 首页
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "",
+				"navigationBarBackgroundColor": "#fff",
+				"onReachBottomDistance": 20,
+				"navigationStyle": "custom"
+			}
+		},
+		// 接单设置
+		{
+			"path": "pages/receiveOrderSetting/receiveOrderSetting",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#23CE85",
+				"navigationBarTextStyle": "white"
+			}
+		}
+		// 接单模式设置
+		, {
+			"path": "pages/receiveOrderSetting/receiveOrderModule",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#F2F4F6"
+			}
+
+		}
+		// 接单设置--问题帮助
+		, {
+			"path": "pages/receiveOrderSetting/residentAreaHelp",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		},
+		// 清单信息
+		 {
+			"path": "pages/orderDetail/inventory",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#23CE85",
+				"navigationBarTextStyle": "white",
+				"navigationStyle":"custom"
+			}
+		},
+		// 扫码入库
+		{
+			"path": "pages/putInStorage/putInStorage",
+			"style": {
+				"navigationBarTitleText": "",
+				"navigationBarBackgroundColor": "#fff",
+				"enablePullDownRefresh": false
+			}
+		},
+		// 入库结果
+		{
+			"path": "pages/putInStorage/storageResult",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+		}, {
+			"path": "pages/orderDetail/orderDetail",
+			"style": {
+				"navigationBarTitleText": "订单详情",
+				"enablePullDownRefresh": false
+			}
+		}
+		// 填写收货信息
+		, {
+			"path": "pages/orderDetail/fillingReceiptInfo",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": true,
+				"navigationBarBackgroundColor": "#23CE85",
+				"navigationBarTextStyle": "white"
+			}
+		}
+		, {
+			"path": "pages/orderDetail/alreadyFinishedOrderDetail",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#23CE85",
+				"navigationBarTextStyle": "white"
+			}
+		}, {
+			"path": "pages/orderDetail/orderPay",
+			"style": {
+				"navigationBarTitleText": "订单支付",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/orderDetail/payInfo",
+			"style": {
+				"navigationBarTitleText": "订单支付",
+				"navigationBarBackgroundColor": "#fff"
+			}
+		}, {
+			"path": "pages/orderDetail/payResult",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#fff"
+			}
+		}, {
+			"path": "pages/login/login",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false,
+				"navigationStyle": "custom"
+			}
+		}
+	],
+	// 分包
+	"subPackages": [{
+			"root": "personalPackage",
+			"pages": [
+				// 个人中心
+				{
+					"path": "pages/my/my",
+					"style": {
+						"navigationBarTitleText": "",
+						"navigationBarBackgroundColor": "#fff",
+						"enablePullDownRefresh": false,
+						"navigationStyle": "custom"
+					}
+
+				},
+				// 个人中心---附近打包站
+				{
+					"path": "pages/my/nearRecycleBin",
+					"style": {
+						"navigationBarTitleText": "",
+						"navigationBarBackgroundColor": "#F2F4F6",
+						"enablePullDownRefresh": true
+					}
+
+				},
+				// 个人中心---我的账户
+				{
+					"path": "pages/my/myAccount/myAccount",
+					"style": {
+						"navigationBarTitleText": "",
+						"navigationBarBackgroundColor": "#fff",
+						"enablePullDownRefresh": false
+					}
+
+				}
+				// 入库记录
+				, {
+					"path": "pages/my/storageRecord/storageRecord",
+					"style": {
+						"navigationBarTitleText": "",
+						"navigationBarBackgroundColor": "#F2F4F6",
+						"enablePullDownRefresh": false
+					}
+
+				}
+				// 入库记录---入库详情
+				, {
+					"path": "pages/my/storageRecord/storageDetail",
+					"style": {
+						"navigationBarTitleText": "",
+						"navigationBarBackgroundColor": "#fff",
+						"enablePullDownRefresh": false
+					}
+
+				}
+				// 入库记录---入库订单详情
+				, {
+					"path": "pages/my/storageRecord/storageOrderDetail",
+					"style": {
+						"navigationBarTitleText": "",
+						"navigationBarBackgroundColor": "#F2F4F6",
+						"enablePullDownRefresh": false
+					}
+
+				}
+				// 个人中心---排行榜
+				, {
+					"path": "pages/my/orderStatistic/rankList",
+					"style": {
+						"navigationBarTitleText": "排行榜",
+						"navigationBarTextStyle": "white",
+						"navigationBarBackgroundColor": "#588EFC",
+						"enablePullDownRefresh": false
+					}
+
+				}
+				// 个人中心---客服服务
+				, {
+					"path": "pages/my/contactService",
+					"style": {
+						"navigationBarTitleText": "联系客服",
+						"navigationBarTextStyle": "black",
+						"navigationBarBackgroundColor": "#fff",
+						"enablePullDownRefresh": false
+					}
+
+				}
+				// 个人中心---提现
+				, {
+					"path": "pages/my/myAccount/withdraw/withdraw",
+					"style": {
+						"navigationBarTitleText": "提现",
+						"navigationBarTextStyle": "black",
+						"navigationBarBackgroundColor": "#fff",
+						"enablePullDownRefresh": false
+					}
+
+				}
+				// 个人中心---支付密码
+				, {
+					"path": "pages/my/myAccount/withdraw/withdrawPayPwd",
+					"style": {
+						"navigationBarTitleText": "支付密码",
+						"navigationBarTextStyle": "black",
+						"navigationBarBackgroundColor": "#fff",
+						"enablePullDownRefresh": false
+					}
+
+				}
+				// 个人中心---支付结果详情
+				, {
+					"path": "pages/my/myAccount/withdraw/withdrawResult",
+					"style": {
+						"navigationBarTitleText": "支付结果",
+						"navigationBarTextStyle": "black",
+						"navigationBarBackgroundColor": "#fff",
+						"enablePullDownRefresh": false
+					}
+
+				}
+				// 个人中心---提现记录
+				, {
+					"path": "pages/my/myAccount/withdraw/withdrawRecord",
+					"style": {
+						"navigationBarTitleText": "提现记录",
+						"navigationBarTextStyle": "black",
+						"navigationBarBackgroundColor": "#F2F4F6",
+						"enablePullDownRefresh": true
+					}
+				}
+
+				// 个人中心---充值
+				, {
+					"path": "pages/my/myAccount/recharge/recharge",
+					"style": {
+						"navigationBarTitleText": "充值",
+						"navigationBarTextStyle": "black",
+						"navigationBarBackgroundColor": "#fff",
+						"enablePullDownRefresh": false
+					}
+
+				}
+				// 个人中心---充值记录
+				, {
+					"path": "pages/my/myAccount/recharge/rechargeRecord",
+					"style": {
+						"navigationBarTitleText": "充值记录",
+						"navigationBarTextStyle": "black",
+						"navigationBarBackgroundColor": "#F2F4F6",
+						"enablePullDownRefresh": true
+					}
+
+				}
+				// 个人中心---绑定银行卡
+				, {
+					"path": "pages/my/myAccount/withdraw/bindBankCard",
+					"style": {
+						"navigationBarTitleText": "绑定银行卡",
+						"navigationBarTextStyle": "black",
+						"navigationBarBackgroundColor": "#fff",
+						"enablePullDownRefresh": false
+					}
+
+				}
+				// 个人中心---选择银行卡
+				, {
+					"path": "pages/my/myAccount/withdraw/chooseBank",
+					"style": {
+						"navigationBarTitleText": "选择银行卡",
+						"navigationBarTextStyle": "black",
+						"navigationBarBackgroundColor": "#fff",
+						"enablePullDownRefresh": false
+					}
+
+				}
+				// 个人中心---选择用户已经添加的银行卡
+				, {
+					"path": "pages/my/myAccount/withdraw/chooseHoldUserBank",
+					"style": {
+						"navigationBarTitleText": "选择银行卡",
+						"navigationBarTextStyle": "black",
+						"navigationBarBackgroundColor": "#fff",
+						"enablePullDownRefresh": false
+					}
+
+				}
+				// 个人中心---账单明细
+				, {
+					"path": "pages/my/myAccount/billDetail",
+					"style": {
+						"navigationBarTitleText": "账单明细",
+						"navigationBarTextStyle": "black",
+						"navigationBarBackgroundColor": "#F2F4F6",
+						"enablePullDownRefresh": true
+					}
+				}
+				// 个人中心---账单统计
+				, {
+					"path": "pages/my/myAccount/billStatistic",
+					"style": {
+						"navigationBarTitleText": "",
+						"navigationBarTextStyle": "white",
+						"navigationBarBackgroundColor": "#19BF56",
+						"enablePullDownRefresh": false
+					}
+				}
+				// 个人中心---设置支付密码
+				, {
+					"path": "pages/my/setPaymentPwd",
+					"style": {
+						"navigationBarTitleText": "设置密码",
+						"navigationBarTextStyle": "black",
+						"navigationBarBackgroundColor": "#fff",
+						"enablePullDownRefresh": false
+					}
+				}
+				// 个人中心---设置支付密码结果
+				, {
+					"path": "pages/my/setPwdResult",
+					"style": {
+						"navigationBarTitleText": "设置成功",
+						"navigationBarTextStyle": "black",
+						"navigationBarBackgroundColor": "#fff",
+						"enablePullDownRefresh": false
+					}
+				}
+				// 个人中心---重置支付密码
+				, {
+					"path": "pages/my/resetPaymentPwd",
+					"style": {
+						"navigationBarTitleText": "重置密码",
+						"navigationBarTextStyle": "black",
+						"navigationBarBackgroundColor": "#fff",
+						"enablePullDownRefresh": false
+					}
+				}
+				// 个人中心---忘记密码
+				, {
+					"path": "pages/my/forgetPwd",
+					"style": {
+						"navigationBarTitleText": "",
+						"navigationBarTextStyle": "black",
+						"navigationBarBackgroundColor": "#fff",
+						"enablePullDownRefresh": false
+					}
+				},
+
+				// 个人中心---订单统计
+				{
+					"path": "pages/my/orderStatistic/orderStatistic",
+					"style": {
+						"navigationBarTitleText": "订单统计",
+						"navigationBarTextStyle": "black",
+						"navigationBarBackgroundColor": "#fff",
+						"enablePullDownRefresh": false
+					}
+
+				},
+
+				// 个人中心---我的银行卡
+				{
+					"path": "pages/my/myAccount/withdraw/myBank",
+					"style": {
+						"navigationBarTitleText": "我的银行卡",
+						"navigationBarTextStyle": "black",
+						"navigationBarBackgroundColor": "#F2F4F6",
+						"enablePullDownRefresh": false
+					}
+
+				},
+
+				// 个人中心---帮助中心
+				{
+					"path": "pages/my/helpCenter",
+					"style": {
+						"navigationBarTitleText": "帮助中心",
+						"navigationBarTextStyle": "black",
+						"navigationBarBackgroundColor": "#F2F4F6",
+						"enablePullDownRefresh": false
+					}
+
+				},
+
+				// 个人中心---实名认证
+				{
+					"path": "pages/my/realNameAuth",
+					"style": {
+						"navigationBarTitleText": "实名认证",
+						"navigationBarTextStyle": "black",
+						"navigationBarBackgroundColor": "#fff",
+						"enablePullDownRefresh": false,
+						"navigationStyle": "custom"
+					}
+
+				},
+
+				// 个人中心---实名认证结果
+				{
+					"path": "pages/my/realNameAuthResult",
+					"style": {
+						"navigationBarTitleText": "实名认证",
+						"navigationBarTextStyle": "black",
+						"navigationBarBackgroundColor": "#fff",
+						"enablePullDownRefresh": false
+					}
+				},
+
+				// 个人中心---用户使用协议
+				{
+					"path": "pages/my/userPolicy",
+					"style": {
+						"navigationBarTitleText": "用户使用协议",
+						"navigationBarTextStyle": "black",
+						"navigationBarBackgroundColor": "#F2F4F6",
+						"enablePullDownRefresh": false
+					}
+				},
+
+				// 个人中心---隐私协议
+				{
+					"path": "pages/my/provitePolicy",
+					"style": {
+						"navigationBarTitleText": "隐私协议",
+						"navigationBarTextStyle": "black",
+						"navigationBarBackgroundColor": "#F2F4F6",
+						"enablePullDownRefresh": false
+					}
+				}
+			]
+		},
+		{
+			"root": "thirdPackage",
+			"pages": [
+
+				// 消息中心--首页
+				{
+					"path": "pages/message/messageCenter",
+					"style": {
+						"navigationBarTitleText": "消息中心",
+						"navigationBarBackgroundColor": "#fff"
+					}
+				},
+				// 消息中心--对应列表
+				{
+					"path": "pages/message/messageList",
+					"style": {
+						"navigationBarTitleText": "消息中心",
+						"navigationBarBackgroundColor": "#fff"
+					}
+				},
+				// 消息中心--消息详情
+				{
+					"path": "pages/message/messageDetail",
+					"style": {
+						"navigationBarTitleText": "",
+						"navigationBarBackgroundColor": "#fff"
+					}
+				},
+				// 个人信息
+				{
+					"path": "pages/personalInfo/personalInfo",
+					"style": {
+						"navigationBarTitleText": "个人信息",
+						"navigationBarBackgroundColor": "#F2F4F6",
+						"enablePullDownRefresh": false
+					}
+				},
+				// 个人信息---当前手机号
+				{
+					"path": "pages/personalInfo/currentTel",
+					"style": {
+						"navigationBarTitleText": "",
+						"navigationBarBackgroundColor": "#fff",
+						"enablePullDownRefresh": false
+					}
+				},
+				// 个人信息---修改手机号
+				{
+					"path": "pages/personalInfo/changeTel",
+					"style": {
+						"navigationBarTitleText": "",
+						"navigationBarBackgroundColor": "#fff",
+						"enablePullDownRefresh": false
+					}
+				},
+				// 个人信息---工作照
+				{
+					"path": "pages/personalInfo/workPicture",
+					"style": {
+						"navigationBarTitleText": "",
+						"navigationBarBackgroundColor": "#F2F4F6",
+						"enablePullDownRefresh": false
+					}
+				},
+				// 个人信息---头像裁剪
+				{
+					"path": "pages/personalInfo/imgCutPage",
+					"style": {
+						"navigationBarTitleText": "",
+						"navigationBarBackgroundColor": "#fff",
+						"enablePullDownRefresh": false
+					}
+				}
+			    
+            ]
+		}
+	],
+
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		// "navigationStyle": "custom",
+		"backgroundColor": "#F8F8F8"
+	}
+}
